@@ -1,0 +1,294 @@
+$black-color: #000000;
+$white-color:#ffffff;
+$main-color:#eb9f9f;
+$text-color:#F87398;
+$bg-color:#F8F3E9;
+$boder-color:#F3E8E9;
+$boder-bg-color:#FDFBF8;
+
+/* PUBLIC */
+.disabled {
+    cursor: default;
+}
+.none{
+    display: none;
+}
+.main-color{
+    background-color:$main-color;
+    color:$white-color;
+}
+.Textcolor ,.card-title{
+    color: $text-color;
+}
+
+.curpointer{
+    cursor: pointer;
+}
+
+/* HEADER */
+header{
+    position: absolute;
+    z-index: 999;
+}
+.navbar{
+    position: fixed;
+    top:0px;
+    width: 100%;
+    height: auto;
+    line-height: 68px;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu{
+    left:-100px;
+}
+.nav-tabs > li {
+    float:none;
+    display:inline-block;
+    zoom:1;
+}
+.nav-tabs {
+    text-align:center;
+    border-bottom: 2px solid $boder-color;
+}
+.nav-tabs .nav-item.show .nav-link, 
+.nav-tabs .nav-link.active {
+    background-color: $boder-bg-color;
+    color: $text-color;
+    border-color: $boder-color $boder-color $boder-bg-color;
+}
+.dropdown-menu {
+    border-top:none;
+    border-left:1px $boder-color solid;
+    border-right:1px $boder-color solid;
+    border-bottom:1px $boder-color solid;
+    padding: 0;
+    text-align:center;
+    border-radius:0;
+    top:100px;
+}
+.dropdown-item{
+    color:$text-color;
+    line-height: 35px;
+    border-top:1px $boder-color solid;
+}
+.dropdown-item:focus, .dropdown-item:hover{
+    color:$text-color;
+    background-color: $bg-color;
+}
+
+/* CONTENT */
+.content{
+    position: relative;
+    top: 100px;
+    padding-bottom: 100px;
+    background-color: $bg-color;
+}
+
+/* CAROUSEL */
+.carousel-indicators li {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    margin: 0px 10px;
+}
+.carousel-indicators .active{
+    background-color: $main-color;
+}
+
+/* ORDER TAB */
+.card {
+    border: 0px;
+    border-radius:0;
+    background-color: transparent;
+
+    img{
+        border-radius: .25rem;
+    }
+}
+.tab-content{
+    background-color: $boder-bg-color;
+    border-left: 1px solid $boder-color;
+    border-right: 1px solid $boder-color;;
+}
+.tab-content,.nav-tabs {
+    border-bottom: 1px solid $boder-color;
+}
+.tab-pane{
+    width: 60%;
+    margin: 0 auto;
+}
+.cursorP{
+    cursor: pointer;
+    width: 315px;
+
+    img{
+        width: 100%;
+    }
+}
+a.cursorP:hover,.hover-bg{
+    border: 1px solid $text-color;
+}
+.colorblock span{
+
+    float:left;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border-radius:999em;
+    border: 1px $black-color solid;
+
+    &:hover{
+        border: 2px $text-color solid;
+        cursor: pointer;
+    }
+    &.active{
+        border: 2px $text-color solid;
+    }
+}
+.iconblock span{
+
+    float:left;
+    width: 26px;
+    height: 26px;
+    margin: 10px 5px 10px;
+    border-radius: 5px;
+    border: 1px #A4ACB2 solid;
+    background-repeat: no-repeat;
+
+    &:hover{
+        border: 2px $text-color solid;
+        cursor: pointer;
+    }
+    &.active{
+        border: 2px $text-color solid;
+        background-color: rgba(228, 181, 216, 0.4);
+        background-blend-mode: multiply;
+    }
+}
+.iconposi{
+    background-repeat: no-repeat;
+}
+/*FOOTER*/
+.foot-content{
+    position: relative; 
+    bottom: 0px;
+    width: 100%;
+    height: 100px;
+    z-index: 2;
+}
+.foot-text{
+    text-align: center;
+    line-height: 100px;
+}
+
+/*BUTTON*/
+.btn-dark {
+    color: $white-color;
+    background-color: $text-color;
+    border-color: $text-color;
+}
+.btn-dark:hover {
+    color: $white-color;
+    background-color: $main-color;
+    border-color: $main-color;
+}
+.btn-dark.focus,.btn-dark:focus,
+.btn-secondary,.btn-secondary:focus {
+    box-shadow:none;
+}
+.btn-dark.disabled,.btn-dark:disabled {
+    color: $white-color;
+    background-color: $text-color;
+    border-color: $text-color;
+}
+.btn-dark:not(:disabled):not(.disabled).active,.btn-dark:not(:disabled):not(.disabled):active,.show>.btn-dark.dropdown-toggle {
+    color: #fff;
+    background-color: $main-color;
+    border-color: $main-color;
+}
+.btn-dark:not(:disabled):not(.disabled).active:focus,.btn-dark:not(:disabled):not(.disabled):active:focus,.show>.btn-dark.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+.btn-secondary {
+    color: $text-color;
+    background-color: $white-color;
+    border-color: $main-color;
+}
+
+.btn-secondary:hover {
+    color: $white-color;
+    background-color: $main-color;
+    border-color: $main-color;
+}
+.btn-secondary.disabled,.btn-secondary:disabled {
+    color: $white-color;
+    background-color: $main-color;
+    border-color: $main-color;
+}
+.btn-secondary:not(:disabled):not(.disabled).active,.btn-secondary:not(:disabled):not(.disabled):active,.show>.btn-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: $main-color;
+    border-color: $main-color;
+}
+.btn-secondary:not(:disabled):not(.disabled).active:focus,.btn-secondary:not(:disabled):not(.disabled):active:focus,.show>.btn-secondary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+/* FROM */
+.select_style{
+    width:240px; 
+    height:30px; 
+    overflow:hidden; 
+    background-color:#F4EAEB; 
+    border:1px solid #ccc; 
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px; 
+    margin-top:20px;
+  } 
+  .select_style select{ 
+    padding:5px;
+    background-color:transparent; 
+    width:268px; 
+    font-size:16px; 
+    border:none; 
+    height:30px; 
+    -webkit-appearance:none; 
+  } 
+
+@media (min-width: 0px) {
+    .iconposi{
+        background-position: 100px 150px;
+    }
+    .navbar{
+        line-height: 74px;
+    }
+}
+@media (min-width: 576px) {
+    .iconposi{
+        background-position: 120px 170px;
+    }
+    .navbar{
+        line-height: 74px;
+    }
+}
+@media (min-width: 768px) {
+    .iconposi{
+        background-position: 60px 90px;
+    }
+    .navbar{
+        line-height: 74px;
+    }
+}
+
+@media (min-width: 992px) {
+    .iconposi{
+        background-position: 100px 150px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .iconposi{
+        background-position: 100px 177px;
+    }
+}
